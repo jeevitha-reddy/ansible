@@ -1,14 +1,16 @@
-# play book is list of play
+# playbook is list of play
 - name: PALY-1
-  host: localhost
+  hosts: localhost
   tasks: 
   -  name: PALY-1 and TASK-1
      ansible.builtin.debug:
       msg: " Hello play-1"
 
 - name: PALY-2
-  host: localhost
+  hosts: localhost
   tasks: 
   -  name: PALY-2 and TASK-2
      ansible.builtin.debug:
-      msg: " Hello play-2"      
+      msg: " Hello play-2"    
+
+
