@@ -1,0 +1,8 @@
+# variables from file
+- name: variables from File
+  hosts: localhost
+  vars_files:
+  - variables.yaml
+ tasks:
+  - name: 		
+	
