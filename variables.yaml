@@ -1,9 +1,7 @@
 - name: variables
   hosts: localhost
-  vars:
-    Course: "DevOps"
-    Trainer: "Sivakumar"
-    Duration: "110HRS"
+  vars_files:
+  - vars.yaml  
   tasks:
   - name: check variables
     ansible.builtin.debug:
