@@ -2,10 +2,10 @@
   hosts: localhost
   tasks:
   - name: print persons
-  ansible.builtin.debug:
-    msg: "Hai {{item}}" # it's s default keyword
-  loop:
-  - ramesh
-  - suresh
-  - jeevitha
-  - rama 
+    ansible.builtin.debug:
+      msg: "Hai {{ item }}" # it's s default keyword
+    loop:
+    - ramesh
+    - suresh
+    - jeevitha
+    - rama 
