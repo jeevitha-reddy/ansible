@@ -3,27 +3,27 @@
   vars: 
     Name: jeevitha #its a key value
     Skills: # Skills is a list type
-    - Devops
+    - DevOps
     - Shell
     - Ansible
     - Linux
-    Experiance: # its map type i have key value pair
-      Devops: 8
-      Aws: 6
+    Experience: # its map type i have key value pair
+      DevOps: 8
+      AWS: 6
       Docker: 4
     Trainer: true #type is boolean
   tasks:
   - name: print key value pair
     ansible.builtin.debug:
-      msg: "name: {{Name}}"
+      msg: "Name: {{Name}}"
 
-  - skills: Print list
+  - name: Print list
     ansible.builtin.debug:
-      msg: "skills: {{Skills}}"
+      msg: "Skills: {{Skills}}"
 
-  - Experiance: print map
+  - name: print map
     ansible.builtin.debug:
-      msg: "experiance: {{Experiance}}"
+      msg: "Experiance: {{Experiance}}"
 
   - name: print boolean
     ansible.builtin.debug:
