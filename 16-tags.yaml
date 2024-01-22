@@ -12,7 +12,7 @@
     - devops
 
   - name: print message 
-    ansible.buitlin.debug:
+    ansible.builtin.debug:
       msg: "Hello AWS"
 
     tags:
