@@ -14,7 +14,7 @@
     Trainer: true #type is boolean
   tasks:
   - name: print key value pair
-    ansible.builtn.debug:
+    ansible.builtin.debug:
       msg: "name: {{Name}}"
 
   - skills: Print list
